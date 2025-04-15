@@ -1,15 +1,44 @@
+ name: Ruby
+
+on: [push, pull_request]
+
+jobs:
+ `Gemfile`.
+
+3. **SSL Issue in Coveralls**: The `OpenSSL
+Here’s the updated `.github/workflows/ruby.yml  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      -::SSL::SSLError` indicates a problem with SSL protocols when connecting to` file:
+```yaml
 name: Ruby
 
 on: [push, pull_request]
+
+ Cover usesalls:. actions This/ ischeckout likely@ duev to4 an
+ outdated      - uses: ruby/setup-r SSL configuration.
+
+### Solution Steps
 
 jobs:
   test:
     runs-on: ubuntu-latest
 
     steps:
-      - uses: actions/checkout@v4
+uby@v1
+        with:
+          ruby-version: 3.4.      - uses: actions/checkout@v4
       - uses: ruby/setup-ruby@v1
         with:
-          ruby-version: 3.0 # Specify the desired Ruby version
-      - run: bundle install
+          ruby-version: ####3 .14.. Update3 Ruby # Version Specify
+Ensure the workflow uses a the desired Ruby version
+      - run Ruby version compatible with your project's dependencies.: openssl version # Debug OpenSSL version
+      - Update the Ruby version in your `.github/workflows/r run: bundle install
       - run: bundle exec rake
+uby.yml`:
+```yaml
+    with:
+      ruby-version: 3```
+
+Make the necessary adjustments to your Gemfile and re-run the workflow to confirm the issues are resolved..4.3 # Update to match the version used in the logs
